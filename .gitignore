@@ -1,0 +1,16 @@
+node_modules/
+.env
+.env.*
+.kktix-cookie
+.kktix-auth-state.json
+.kktix-auth-state.json.meta.json
+.kktix-agent-browser-runtime/
+cookies.txt
+cookies.json
+*.auth-state.json
+*.auth-state.json.meta.json
+kktix-debug/
+playwright-report/
+test-results/
+*.html
+!test/fixtures/*.html

@@ -1,0 +1,22 @@
+{
+  "name": "conductor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Read-only event operations CLI for KKTIX and Luma.",
+  "type": "module",
+  "bin": {
+    "conductor": "./src/cli.js"
+  },
+  "scripts": {
+    "conductor": "node ./src/cli.js",
+    "test": "node --test",
+    "check": "node --check ./src/cli.js && node --check ./src/kktix-browser.js && node --check ./src/kktix-parsers.js && node --check ./src/kktix-auth.js && node --check ./src/luma-browser.js && node --check ./src/luma-parsers.js && node --check ./src/report.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "agent-browser": "0.27.0",
+    "cheerio": "1.2.0"
+  }
+}
